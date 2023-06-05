@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./assets/icons/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- build css -->
-    <link rel="stylesheet" href="./dist/output.css">
-    <title>starter</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Prabot</title>
 </head>
 <body>
-    
+
+    <header class="bg-white fixed w-full top-[77px] ">
+        <div class="container mx-auto px-5">
+            <nav class="flex  justify-between w-full h-[110px] items-center ">
+               <a href="#"> <img class="hover:rotate-[360deg] duration-700" src="./assets/icons/logo.svg" alt="logo"></a>
+               <ul class="flex gap-x-[106px] items-center">
+
+                <li class="text-[#959595] font-bold hover:text-black duration-300">
+                    <a href="#">Daftar Akun</a>
+                </li>
+               
+                <li>
+
+                    <button class="bg-[#7AB674] w-[69px] h-[69px] active:bg-green-700 active:text-white grid place-content-center text-white hover:bg-[#4DA27D] duration-500">
+                        <i data-feather="shopping-bag"></i>
+                    </button>
+
+                </li>
+
+               </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-[187px]">
+        <section id="intro">
+            <div class="container mx-auto px-5">
+                <div class="flex">
+                    <div class="p-2">
+                        <h1 class="text-[96px] font-medium w-[497px]">Alfonso Wardrobe <span>2 Doors</span></h1>
+                        <p>Kini hadir sebagai lemari pakaian dengan desain yang minimalis serta cenderung terkesan elegan. </p>
+                        <button class="flex text-white font-bold gap-[37px] bg-[#7AB674] py-3 px-[35px]" ><span>BELI SEKARANG</span> <i data-feather="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
+<script>
+    feather.replace()
+</script>
 </html>
