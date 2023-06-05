@@ -1,5 +1,5 @@
 
-## TAILWINDCSS STARTER PROJECT
+
 <hr>
 
 #### build style.css 
