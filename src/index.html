@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- build css -->
     <link rel="stylesheet" href="../dist/output.css">
     <title>Prabot</title>
 </head>
-<body>
+<body class="font-['Roboto']">
 
-    <header class="bg-white fixed w-full top-[77px] ">
+    <header class="bg-white relative w-full top-[77px] ">
         <div class="container mx-auto px-5">
             <nav class="flex  justify-between w-full h-[110px] items-center ">
                <a href="#"> <img class="hover:rotate-[360deg] duration-700" src="./assets/icons/logo.svg" alt="logo"></a>
@@ -36,14 +40,33 @@
         </div>
     </header>
 
-    <main class="pt-[187px]">
-        <section id="intro">
+    <main class="pt-[197px] ">
+        <section id="intro" class="bg-[url(./assets/images/bg_hero.png)] bg-no-repeat">
             <div class="container mx-auto px-5">
-                <div class="flex">
+                <div class="flex gap-[100px]">
                     <div class="p-2">
-                        <h1 class="text-[96px] font-medium w-[497px]">Alfonso Wardrobe <span>2 Doors</span></h1>
-                        <p>Kini hadir sebagai lemari pakaian dengan desain yang minimalis serta cenderung terkesan elegan. </p>
+                        <h1 class="text-[96px] font-medium w-[487px]">Alfonso Wardrobe <span class="text-[#7AB674] font-bold">2 Doors</span></h1>
+                        <p class="text-[#959595] text-[18px] font-medium pt-[34px] mb-[42px] w-[505px]">Kini hadir sebagai lemari pakaian dengan desain yang minimalis serta cenderung terkesan elegan. </p>
                         <button class="flex text-white font-bold gap-[37px] bg-[#7AB674] py-3 px-[35px]" ><span>BELI SEKARANG</span> <i data-feather="arrow-right"></i></button>
+                    </div>
+
+                    <div class="p-2 flex items-center gap-[51px] -translate-y-24">
+                        <img src="./assets/images/0 IMAGE 1.png" class="" alt="Shkaf">
+                        <ul>
+                            <li class="text-[#273029] text-[24px] font-bold w-[124px]">Ukuran Produk</li>
+                            <li>
+                                <p class="text-[#959595] text-[18px] font-medium pt-[21px] w-[505px]">Panjang</p>
+                                <h2 class="text-[#7AB674] text-[34px] font-bold ">85 cm</h2>
+                            </li>
+                            <li>
+                                <p class="text-[#959595] text-[18px] font-medium pt-[21px] w-[505px]">Lebar</p>
+                                <h2 class="text-[#7AB674] text-[34px] font-bold">56 cm</h2>
+                            </li>
+                            <li>
+                                <p class="text-[#959595] text-[18px] font-medium pt-[21px] w-[505px]">Tinggi</p>
+                                <h2 class="text-[#7AB674] text-[34px] font-bold">180 cm</h2>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -54,5 +77,5 @@
 <script>
     feather.replace()
 </script>
-<script src="../app.js"></script>
+<!-- <script src="../app.js"></script> -->
 </html>
